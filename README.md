@@ -40,4 +40,4 @@ This project is a web application developed using React and Vite. Its primary pu
 
 ## Gif
 
-<img src="/public/welcome.gif"/>
+<img src="/public/vitekitaplik.gif"/>
