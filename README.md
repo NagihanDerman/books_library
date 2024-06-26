@@ -37,3 +37,7 @@ This project is a web application developed using React and Vite. Its primary pu
 - Usage of useState Hook: State management within components is handled using useState hook. For example, it can manage data from form fields.
 
 - Usage of useEffect Hook: Asynchronous operations, data fetching, and lifecycle events are managed using useEffect hook. For instance, it can handle API requests or execute code when the component mounts.
+
+## Gif
+
+<img src="/public/welcome.gif"/>
