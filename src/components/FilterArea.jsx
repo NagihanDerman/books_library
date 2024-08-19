@@ -1,13 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 
 const FilterArea = () => {
-  /*
-   * useSearchParams url'deki arama parametrelerini yönetmemizi sağlar.
-   * çağrılınca dizi içerisindeki iki değer dönderir
-   * 1- urldeki arama parametreleri
-   * 2- url'i güncellemeye yarayan method
-   */
-
   const [searchParams, setSearchParams] = useSearchParams();
   const handleSubmit = (e) => {
     e.preventDefault();

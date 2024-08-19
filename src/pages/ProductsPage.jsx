@@ -26,7 +26,6 @@ const ProductsPage = () => {
       .catch((err) => console.log(err));
   }, [order, query]);
 
-  // console.log(books);
   return (
     <div className="my-5 p-5">
       <h3>{books?.length} Kitap Bulundu</h3>

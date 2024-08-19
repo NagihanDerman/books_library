@@ -4,9 +4,9 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const ProductDetail = () => {
   const [book, setBook] = useState(null);
-  // use Navigate fonk cagirip yonlendirme gorevini yapacal olan fok erisme
+  // use Navigate fonk cagirip yonlendirme gorevini yapacak olan fok erisme
   const navigate = useNavigate();
-  //1 - url daki id parametresini al, useParams url e eklenmis olan pathParams a erisim saglar
+  //1 - url daki id parametresini al,
 
   const { id } = useParams();
   // 2- kitabin bilgilerini apiden al
@@ -15,7 +15,7 @@ const ProductDetail = () => {
       .get(`http://localhost:3090/books/${id}`)
       .then((res) => setBook(res.data))
       .catch((err) => navigate("/undefined", { state: err.message }));
-    // urunun bilgisi  api dne gelmediyse kullaniciyi 404 sayfasina yonlendir
+    // urunun bilgisi  apiden  gelmediyse kullaniciyi 404 sayfasina yonlendir
   }, []);
 
   return (

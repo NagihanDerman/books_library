@@ -3,9 +3,6 @@ import { NavLink, Outlet, useNavigate, Navigate } from "react-router-dom";
 const CategoryPage = () => {
   //   const navigate = useNavigate();
 
-  // örnek
-  // kullanıcı giriş yapmışsa sayfayı göster
-  // sadece user adminse outlet'i ekrana bas
   const user = {
     name: "ahmet",
     type: "admin",
@@ -15,8 +12,7 @@ const CategoryPage = () => {
     // kullanıcı tipi admin değilse bu sayfayı gösterme
     // kullanıcyı anasayfaya yönlendir
     //? 1) hook kullanımı
-    // react uyarı veriyordu
-    // navigate('/');
+
     //? 2) bileşen kullanımı
     return <Navigate to={"/"} replace />;
   }
@@ -28,11 +24,6 @@ const CategoryPage = () => {
         <NavLink to={"/kategori/roman"}>Roman</NavLink>
       </aside>
 
-      {/*
-       * ASIL SAYFA İÇERİĞİ
-       * Alt route'un kapsayıcı route içerisnde
-       * hangi noktada ekrana basılıcağını belirler
-       */}
       <Outlet />
     </div>
   );
